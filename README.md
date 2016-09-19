@@ -75,6 +75,7 @@ function iterator (value, key, list) {
 
 foreach({a:1, b:2, c:3}, iterator)
 foreach(['x', 'y', 'z'], iterator)
+foreach(['x', 'y', ['z']], iterator,true);
 
 foreach({a:1, c:3}, iterator)
 foreach(['x', 'z'], iterator)
